@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: monospace
 }
 
 #heading{
@@ -58,4 +59,22 @@
     color: white;
     display: inline-block;
     border-radius: 8px;
+}
+
+@media (max-width:600px) {
+    #heading{
+        height: 5.9vh;
+        line-height: 5.9vh;
+    }
+    .choices{
+        flex-direction: column;
+    }
+    .score p{
+        font-size: 3vh;
+        padding-left: 1.4vh;
+    }
+    .message{
+        font-size: 3vh;
+    }
+    
 }
