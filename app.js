@@ -6,6 +6,7 @@ const msgpara = document.querySelector("#msg");
 const msgparadiv = document.querySelector(".message");
 const yourscore = document.querySelector("#your-score");
 const opponentscore = document.querySelector("#computer-score");
+const resetScore = document.querySelector(".reset");
 const compChoice= ()=>{
     const options = ["rock", "paper", "scissors"];
     const randIdx = Math.floor(Math.random()*3);
@@ -53,7 +54,15 @@ const playGame = (userChoice)=>{
     }
 
 }
+resetScore.addEventListener("click",()=>{
 
+    userScore = 0;
+    yourscore.innerHTML = userScore;
+    computerScore = 0;
+    opponentscore.innerHTML = computerScore;
+
+
+});
 choices.forEach((choice) => {
     const userChoice = choice.getAttribute("id")
     choice.addEventListener("click",()=>{

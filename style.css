@@ -61,6 +61,15 @@
     border-radius: 8px;
 }
 
+
+.reset{
+    color: white;
+    background-color: #081b31;
+    font-size: 2.5vw;
+    padding: 1vw;
+    border-radius: 8px;
+}
+
 @media (max-width:600px) {
     #heading{
         height: 5.9vh;
@@ -75,6 +84,12 @@
     }
     .message{
         font-size: 3vh;
+    }
+    .reset{
+        margin-top: 5vh;
+        font-size: 2vh;
+        margin-left: 18vh;
+        display: block;
     }
     
 }
